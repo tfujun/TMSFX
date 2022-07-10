@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>  
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+
+<VBox fx:controller="controller.FacultyController" xmlns:fx="http://javafx.com/fxml/1" alignment="center"
+      spacing="10" styleClass="background" prefHeight="400.0" prefWidth="600.0">
+    
+    
+    <!--Filter options-->
+    <HBox alignment="BASELINE_LEFT"> 
+    <Label text="Filters" alignment="BASELINE_LEFT" styleClass="label-h2"/>
+    </HBox>
+    
+    <HBox alignment="center" spacing="10">
+        
+        <Label text="Name: " styleClass="label-opac"/>
+        <TextField fx:id="nameTf" promptText="Filter by name"/>
+        
+        <Label text="Email: " styleClass="label-opac"/>
+        <TextField fx:id="emailTf" promptText="Filter by email"/>
+
+    </HBox>
+    
+    <Separator />
+    
+    <!--Students list view-->
+    <TableView fx:id="studentsTv" items="${controller.faculty.students}">
+        
+        <columns> 
+            <TableColumn text="Name" fx:id="studentsTvName" prefWidth="190" >
+                <cellValueFactory>
+                    <PropertyValueFactory property="name"/> 
+                </cellValueFactory>
+            </TableColumn>
+            
+            <TableColumn text="Email" fx:id="studentsTvEmail" prefWidth="190" >
+                <cellValueFactory>
+                    <PropertyValueFactory property="email"/> 
+                </cellValueFactory>
+            </TableColumn>
+            
+            <TableColumn text="Phone" fx:id="studentsTvPhone" prefWidth="190">
+                <cellValueFactory>
+                    <PropertyValueFactory property="phone"/> 
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+        
+    </TableView>
+    
+    <Separator />
+   
+    <!--Bottom buttons-->
+    <HBox spacing="10"> 
+        
+        <Button onAction="#addBtn" fx:id="addBtn" text="Add" styleClass="button"/>
+        
+        <Button onAction="#deleteBtn" fx:id="deleteBtn" text="Delete" styleClass="button"/> 
+        
+        <Button onAction="#selectBtn" fx:id="selectBtn" text="Select" styleClass="button"/> 
+        
+        <Button onAction="#slipBtn" fx:id="slipBtn" text="SLIP" styleClass="button"/> 
+        
+        <Button onAction="#reportBtn" fx:id="reportBtn" text="Report" styleClass="button"/> 
+        
+        <Button onAction="#closeBtn" fx:id="closeBtn" text="Close" styleClass="button"/> 
+        
+    </HBox>
+    
+    
+  <stylesheets>
+        <URL value="@tmsfx.css"/>
+  </stylesheets>
+    
+    
+</VBox>

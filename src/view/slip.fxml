@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+
+<VBox fx:controller="controller.SlipController" prefHeight="338.0" prefWidth="600.0" styleClass="background" alignment="CENTER"  
+          xmlns:fx="http://javafx.com/fxml/1" spacing="10">
+    
+    <HBox alignment="BASELINE_LEFT"> 
+        <Label text="Tuition Slip:" styleClass="label-h2" />
+    </HBox>
+   
+<GridPane styleClass="root">
+    
+    <padding>
+        <Insets top="10" bottom="10" left="10" right="10" />
+    </padding>
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="40.0" percentWidth="40.0" prefWidth="40.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" percentWidth="30.0" prefWidth="30.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="40.0" percentWidth="40.0" prefWidth="40.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="30.0" percentWidth="30.0" prefWidth="30.0" />
+    </columnConstraints>
+    
+    <Label text="Credits:" 
+        GridPane.columnIndex="0" GridPane.rowIndex="1"/> 
+    <Label fx:id="creditsLbl" text="" styleClass="text-out"
+        GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    
+    <Label text="TotalFee:"
+        GridPane.columnIndex="0" GridPane.rowIndex="2"/> 
+    <Label fx:id="totalFeeLbl" text="" styleClass="text-out"
+        GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    
+    <Label text="Net Fee:"
+        GridPane.columnIndex="0" GridPane.rowIndex="3"/> 
+    <Label fx:id="netFeeLbl" text="" styleClass="text-out"
+        GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    
+    <Label text="Pay Per Credit:"
+        GridPane.columnIndex="2" GridPane.rowIndex="1"/> 
+    <Label fx:id="ppCreditLbl" text="" styleClass="text-out"
+        GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+    
+    <Label text="Scholarship:"
+        GridPane.columnIndex="2" GridPane.rowIndex="2"/> 
+    <Label fx:id="scholarshipLbl" text="" styleClass="text-out"
+        GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+    
+    <Label text="Deduction:"
+        GridPane.columnIndex="2" GridPane.rowIndex="3"/> 
+    <Label fx:id="deductionLbl" text="" styleClass="text-out"
+        GridPane.columnIndex="3" GridPane.rowIndex="3"/>
+    
+</GridPane>
+
+    <VBox alignment="CENTER">
+        <Button onAction="#closeBtn" text="Close" styleClass="button"/> 
+    </VBox>
+
+    <stylesheets>
+        <URL value="@tmsfx.css"/>
+    </stylesheets>    
+
+</VBox>
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+        <file>
+            <url>src/model/Student.java</url>
+            <bookmark id="1">
+                <name/>
+                <line>0</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Users/main/NetBeansProjects/Assignment2TSMFX/src/controller/SlipController.java</file>
+            <file>file:/Users/main/NetBeansProjects/Assignment2TSMFX/src/view/student.fxml</file>
+            <file>file:/Users/main/NetBeansProjects/Assignment2TSMFX/src/view/slip.fxml</file>
+            <file>file:/Users/main/NetBeansProjects/Assignment2TSMFX/src/view/tmsfx.css</file>
+            <file>file:/Users/main/NetBeansProjects/Assignment2TSMFX/src/view/error.fxml</file>
+            <file>file:/Users/main/NetBeansProjects/Assignment2TSMFX/src/view/login.fxml</file>
+            <file>file:/Users/main/NetBeansProjects/Assignment2TSMFX/src/controller/LoginController.java</file>
+            <file>file:/Users/main/NetBeansProjects/Assignment2TSMFX/src/controller/SessionController.java</file>
+            <file>file:/Users/main/NetBeansProjects/Assignment2TSMFX/src/view/tms.fxml</file>
+            <file>file:/Users/main/NetBeansProjects/Assignment2TSMFX/src/view/faculty.fxml</file>
+            <file>file:/Users/main/NetBeansProjects/Assignment2TSMFX/src/view/session.fxml</file>
+            <file>file:/Users/main/NetBeansProjects/Assignment2TSMFX/src/controller/StudentController.java</file>
+        </group>
+    </open-files>
+</project-private>
